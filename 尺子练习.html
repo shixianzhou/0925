@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        #chizi{
+            list-style: none;
+            margin: 200px 0 0 200px;
+        }
+        #chizi li{
+            width: 3px;
+            height: 8px;
+            margin-right: 5px;
+            background-color: #000;
+            float: left;
+            position: relative;
+        }
+        #chizi li:nth-child(5n+1){
+            width: 3px;
+            height: 10px;
+        }
+        #chizi li:nth-child(10n+1){
+            height: 15px;
+            counter-increment:num;
+        }
+        #chizi li:nth-child(10n):before{
+            content: counter(num) '0';
+            position: absolute;
+            top:20px;
+            left: 0;
+        }
+        #chizi li:first-child:before{
+            content: '0';
+            position: absolute;
+            top:20px;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+<ul id="chizi"></ul>
+</body>
+<script type="text/javascript">
+    var chizi = document.getElementById('chizi');
+    var num=100;
+    for (var i=0;i<num;i++){
+        var li = document.createElement('li');
+        chizi.appendChild(li)
+    }
+</script>
+</html>

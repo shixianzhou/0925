@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        #nav{
+            width: 925px;
+            height: 94px;
+        }
+        #nav li{
+            list-style: none;
+            float: left;
+            margin-right: 5px;
+        }
+        #nav .last{
+            margin-right: 0px;
+        }
+        #nav img{
+            width: 150px;
+        }
+        #content{
+            position: relative;
+            height: 580px;
+        }
+        #content li{
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 925px;
+            height: 575px;
+        }
+        #content img{
+            width: 925px;
+        }
+        #content .first{
+            z-index: 1;
+        }
+        #content li:target{
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+<ul id="content">
+    <li id="jd01" class="first"><img src="img/jd001.jpg" alt=""></li>
+    <li id="jd02"><img src="img/jd002.jpg" alt=""></li>
+    <li id="jd03"><img src="img/jd003.jpg" alt=""></li>
+    <li id="jd04"><img src="img/jd004.jpg" alt=""></li>
+    <li id="jd05"><img src="img/jd005.jpg" alt=""></li>
+    <li id="jd06"><img src="img/jd006.jpg" alt=""></li>
+</ul>
+<ul id="nav">
+    <li><a href="#jd01"><img src="img/jd001.jpg" alt=""></a></li>
+    <li><a href="#jd02"><img src="img/jd002.jpg" alt=""></a></li>
+    <li><a href="#jd03"><img src="img/jd003.jpg" alt=""></a></li>
+    <li><a href="#jd04"><img src="img/jd004.jpg" alt=""></a></li>
+    <li><a href="#jd05"><img src="img/jd005.jpg" alt=""></a></li>
+    <li class="last"><a href="#jd06"><img src="img/jd006.jpg" alt=""></a></li>
+</ul>
+</body>
+</html>
