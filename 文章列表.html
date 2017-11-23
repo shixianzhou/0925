@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文章列表</title>
+    <style>
+        #content{
+            margin-top: 200px;
+            margin-left: 300px;
+        }
+        #content li{
+            list-style: none;
+            height: 50px;
+        }
+        #content a{
+            text-decoration: none;
+        }
+        #content span{
+            margin-left: 10px;
+        }
+        a[href='.doc']:before,
+        a[href='.mpg']:before,
+        a[href='.pdf']:before,
+        a[href='.txt']:before,
+        a[href='.xls']:before,
+        a[href='.xml']:before{
+            content: '';
+            vertical-align: middle;
+            width: 24px;
+            height: 24px;
+            display: inline-block;
+            background-repeat: no-repeat;
+        }
+        a[href='.doc']:before{
+        background-image: url("img/icon_doc.png");
+        }
+        a[href='.mpg']:before{
+            background-image: url("img/icon_mpg.png");
+        }
+        a[href='.pdf']:before{
+            background-image: url("img/icon_pdf.png");
+        }
+        a[href='.txt']:before{
+            background-image: url("img/icon_txt.png");
+        }
+        a[href='.xls']:before{
+            background-image: url("img/icon_xls.png");
+        }
+        a[href='.xml']:before{
+            background-image: url("img/icon_xml.png");
+        }
+    </style>
+</head>
+<body>
+<ul id="content">
+    <li><a href=".doc"><span>doc文文件扩展名.doc</span></a></li>
+    <li><a href=".mpg"><span>mpg文件扩展名.mpg</span></a></li>
+    <li><a href=".pdf"><span>pdf文件扩展名.pdf</span></a></li>
+    <li><a href=".txt"><span>txt文件扩展名.txt</span></a></li>
+    <li><a href=".xls"><span>xls文件扩展名.xls</span></a></li>
+    <li><a href=".xml"><span>xml文件扩展名.xml</span></a></li>
+</ul>
+</body>
+</html>
