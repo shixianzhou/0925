@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>侧边栏</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .content{
+            position: relative;
+            text-align: center;
+            line-height: 70px;
+            left: -230px;
+            width: 250px;
+            height: 70px;
+            background: red;
+            margin: 20px 0 20px 0;
+            list-style: none;
+            transition: 0.5s ease-out;
+        }
+        .content a{
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+            font-family: 微软雅黑;
+        }
+        .content:hover{
+            left: 0px;
+            display:block;
+            box-shadow: 0 0 7px 0 #000000;
+        }
+        .li1{
+            background:#539770;
+        }
+        .li2{
+            background: #4B7D74;
+        }
+        .li3{
+            background: #8DC2BC;
+        }
+        .li4{
+            background: #EDD6B4;
+        }
+        .li5{
+            background: #BE7467;
+        }
+        .li6{
+            background: #E2AE63 ;
+        }
+    </style>
+</head>
+<body>
+<ul id="nav">
+    <li class="content li1"><a href="">1</a></li>
+    <li class="content li2"><a href="">2</a></li>
+    <li class="content li3"><a href="">3</a></li>
+    <li class="content li4"><a href="">4</a></li>
+    <li class="content li5"><a href="">5</a></li>
+    <li class="content li6"><a href="">6</a></li>
+</ul>
+</body>
+</html>
