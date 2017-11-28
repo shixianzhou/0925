@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        #warp{
+            width: 50%;
+            height: 100%;
+            margin: 200px auto;
+           display: flex;
+            justify-content: space-around;
+        }
+        .face{
+            width: 80px;
+            height: 80px;
+            border: 2px solid black;
+            box-sizing: border-box;
+            border-radius: 10px;
+        }
+        .face1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .face2{
+        }
+        .point{
+            width: 20px;
+            height: 20px;
+            background-color: #000;
+            border-radius: 50%;
+        }
+        .tface{
+            width: 70px;
+            height: 50px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+    </style>
+</head>
+<body>
+<div id="warp">
+    <div class="face face1"><div class="point"></div></div>
+    <div class="face face2">
+        <div class="point"></div>
+        <div class="tface">
+            <div class="point"></div>
+        </div>
+    </div>
+    <div class="face face3"><div class="point"><div class="point"></div><div class="point"></div></div></div>
+    <div class="face face4"><div class="point"></div><div class="point"></div><div class="point"></div><div class="point"></div></div>
+    <div class="face face5"><div class="point"><div class="point"></div><div class="point"></div><div class="point"></div><div class="point"></div></div></div>
+    <div class="face face6"><div class="point"><div class="point"></div><div class="point"></div><div class="point"></div><div class="point"></div><div class="point"></div></div></div>
+</div>
+</body>
+<script type="text/javascript">
+    window.onload = function () {
+
+    }
+</script>
+</html>
