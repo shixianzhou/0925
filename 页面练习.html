@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body,html{
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        #header{
+            background:rgba(0,0,0,0.5   );
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 10px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+        #nav{
+            display: flex;
+        }
+        #logo{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #logo:hover{
+            opacity: 0.5;
+            transition: 0.5s linear;
+        }
+        #nav a{
+            border: 1px solid #fff7fb;
+            border-radius: 15px;
+            padding: 7px 15px;
+            margin: 2px;
+            color: white;
+            display: block;
+            box-sizing: border-box;
+            transition: 0.5s linear;
+        }
+        #nav a:hover{
+            background:rgba(255,255,255,0.5);
+            color: rgba(0,0,0,0.5);
+            text-shadow: 1px 1px 1px;
+            border: 1px solid rgba(0,0,0,0.5);
+        }
+        #container{
+            width: 100%;
+            height: 100%;
+            background-image: url("img/bg2.jpg");
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #content{
+            width: 1000px;
+            height: 210px;
+            display: flex;
+            /*background: cyan;*/
+            justify-content: space-around;
+        }
+        .class{
+            position: relative;
+            width: 150px;
+            height: 210px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .class:hover .mask{
+            opacity: 0.8;
+            height: 105px;
+            transition: 0.5s linear;
+        }
+        .mask{
+            opacity: 0;
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            left:0;
+            width: 150px;
+            height: 0px;
+            background: rgba(0,0,0,0.8);
+            padding: 10px;
+            display: block;
+            box-sizing: border-box;
+        }
+        .mask span{
+            font-size: 10px;
+            font-weight: bold;
+            color: white;
+            font-family: 方正兰亭超细黑简体;
+        }
+        .c1{
+            background: fuchsia;
+        }
+        .c2{
+            background: #ff6e00;
+        }
+        .c3{
+            background: forestgreen;
+        }
+        .c4{
+            background: crimson;
+        }
+        .c5{
+            background: #00a9ff;
+        }
+        .c6{
+            background: darkcyan;
+        }
+        #wrap{
+            position: fixed;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 55px;
+            height: 220px;
+            background: rgba(0,0,0,0.5);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+        }
+        #wrap .b:hover {
+            width: 100px;
+        }
+        #wrap .b{
+            width: 50px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 14px;
+        }
+        .b1{
+            background: fuchsia;
+        }
+        .b2{
+            background: #ff6e00;
+        }
+        .b3{
+            background: forestgreen;
+        }
+    </style>
+</head>
+<body>
+<header id="header">
+    <div id="logo"><img src="img/atguigu-logo.png" alt=""></div>
+    <div id="wrap">
+        <div class="b b1">
+            <span>学科</span>
+        </div>
+        <div class="b b2">
+            <span>学科</span>
+        </div>
+        <div class="b b3">
+            <span>学科</span>
+        </div>
+    </div>
+    <nav id="nav">
+        <a>新学科</a>
+        <a>学科简介</a>
+        <a>北京校区</a>
+    </nav>
+</header>
+<div id="container">
+    <div id="content">
+        <div class="class c1"> <div class="mask"><span>顷刻崩塌</span></div>
+            <img src="img/ywfw_1.png" alt=""><span>HTML5学科</span></div>
+        <div class="class c2"> <div class="mask"><span>顷刻崩塌</span></div>
+            <img src="img/ywfw_2.png" alt=""><span>JAVA学科</span></div>
+        <div class="class c3"> <div class="mask"><span>顷刻崩塌</span></div>
+            <img src="img/ywfw_3.png" alt=""><span>JAVA大数据</span></div>
+        <div class="class c4"> <div class="mask"><span>顷刻崩塌</span></div>
+            <img src="img/ywfw_4.png" alt=""><span>Android学科</span></div>
+        <div class="class c5"> <div class="mask"><span>顷刻崩塌</span></div>
+            <img src="img/ywfw_5.png" alt=""><span>微信小程序</span></div>
+        <div class="class c6"> <div class="mask"><span>顷刻崩塌</span></div>
+            <img src="img/ywfw_6.png" alt=""><span>PHP学科</span></div>
+    </div>
+</div>
+</body>
+<script type="text/javascript">
+    window.onload = function () {
+
+    }
+</script>
+</html>
