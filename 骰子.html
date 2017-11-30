@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        #wrap {
+            width: 100%;
+            height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #wrap .boxs {
+            width: 700px;
+            height: 200px;
+            background: rgba(130, 255, 0, 0.57);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background: #fff;
+            border-radius: 8px;
+            display: flex;
+        }
+
+        .point {
+            width: 20px;
+            height: 20px;
+            background: #000;
+            border-radius: 50%;
+            box-shadow: -1px 0 1px 1px rgba(213,213,213,0.57) inset;
+        }
+
+        .box1 {
+            justify-content: center;
+        }
+
+        .box2 {
+            justify-content: space-around;
+            padding: 15px 0;
+            box-sizing: border-box;
+        }
+
+        .box3 {
+            justify-content: space-around;
+            padding: 7px;
+            box-sizing: border-box;
+        }
+
+        .box4 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+
+        .box5 {
+            padding: 5px 2px;
+        }
+
+        .top {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .bottom {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .d1 {
+            display: flex;
+            align-self: center;
+            justify-content: center;
+        }
+
+        .d2 {
+            align-self: flex-start;
+        }
+
+        .d3 {
+            align-self: flex-end;
+        }
+
+        .d4 {
+            align-self: center;
+        }
+
+        .d5 {
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+<div id="wrap">
+    <div class="boxs">
+        <div name="1" class="box box1">
+            <div class="point d1"></div>
+        </div>
+        <div name="2" class="box box2">
+            <div class="point d2"></div>
+            <div class="point d3"></div>
+        </div>
+        <div name="3" class="box box3">
+            <div class="point d2"></div>
+            <div class="point d4"></div>
+            <div class="point d3"></div>
+        </div>
+        <div name="4" class="box box4">
+            <div class="top">
+                <div class="point d5"></div>
+                <div class="point d6"></div>
+            </div>
+            <div class="bottom">
+                <div class="point d7"></div>
+                <div class="point d8"></div>
+            </div>
+        </div>
+        <div name="5" class="box box4 box5">
+            <div class="top">
+                <div class="point"></div>
+                <div class="point"></div>
+            </div>
+            <div class="point d5"></div>
+            <div class="bottom">
+                <div class="point"></div>
+                <div class="point"></div>
+            </div>
+        </div>
+        <div name="6" class="box box4 box6">
+            <div class="top">
+                <div class="point"></div>
+                <div class="point"></div>
+            </div>
+            <div class="center bottom">
+                <div class="point"></div>
+                <div class="point"></div>
+            </div>
+            <div class="bottom">
+                <div class="point"></div>
+                <div class="point"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript">
+    window.onload = function () {
+    }
+</script>
+</html>
